@@ -1,0 +1,13 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+//
+// The variables you want to modify
+// assets/variables.scss
+
+$body-font-family: 'Montserrat';
+$heading-font-family: 'Bitter';
+$font-size-root: 18px;
+
+//Colors
+$secondary-color: #3a404d;
+
+@import '~vuetify/src/styles/styles.sass';
