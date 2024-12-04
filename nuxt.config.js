@@ -47,6 +47,9 @@ export default {
     customVariables: ['~/assets/variables.scss'],
     treeShake: true,
   },
+  router: {
+    mode: 'history', // Default and recommended
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},

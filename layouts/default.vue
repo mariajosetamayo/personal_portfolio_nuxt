@@ -18,7 +18,13 @@
         </v-list-item>
         <v-divider></v-divider>
         <div class="menu-list-padding">
-          <v-list-item v-for="item in items" :key="item.title" link>
+          <v-list-item
+            v-for="(item, i) in items"
+            :key="i"
+            :to="item.to"
+            router
+            exact
+          >
             <v-list-item-content>
               <v-list-item-title class="drawer-text">
                 {{ item.title }}
@@ -68,7 +74,9 @@
           <v-list-item
             v-for="item in items"
             :key="item.title"
-            link
+            :to="item.to"
+            router
+            exact
             @click="menuVisible = false"
           >
             <v-list-item-title>{{ item.title }}</v-list-item-title>
@@ -80,11 +88,7 @@
     <!-- Main Content -->
     <v-main>
       <v-container>
-        <h1>Responsive App</h1>
-        <p>
-          The app bar contains a menu on mobile, while the drawer is shown on
-          larger screens.
-        </p>
+        <Nuxt />
       </v-container>
     </v-main>
   </v-app>
@@ -98,9 +102,10 @@ export default {
       drawer: true, // Drawer state for larger screens
       menuVisible: false, // Tracks menu visibility on mobile
       items: [
-        { title: 'Home' },
-        { title: 'Profile', link: '/inspire' },
-        { title: 'Settings' },
+        { title: 'Home', to: '/' },
+        { title: 'Work', to: '/index' },
+        { title: 'Experience', to: '/inspire' },
+        { title: 'About', to: '/' },
       ],
     }
   },
