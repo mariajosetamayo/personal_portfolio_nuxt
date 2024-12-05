@@ -104,7 +104,7 @@ export default {
         { title: 'Home', to: '/' },
         { title: 'Work', to: '/work' },
         { title: 'Experience', to: '/experience' },
-        { title: 'About', to: '/' },
+        { title: 'About', to: '/about' },
       ],
     }
   },
