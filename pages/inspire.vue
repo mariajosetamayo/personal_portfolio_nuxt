@@ -1,13 +1,15 @@
 <template>
   <v-row>
     <v-col class="text-center">
-      <ProjectCard></ProjectCard>
+      <InterviewAi></InterviewAi>
+      <FitnessTribe></FitnessTribe>
     </v-col>
   </v-row>
 </template>
 
 <script>
-import ProjectCard from '@/components/ProjectCard.vue'
+import FitnessTribe from '@/components/FitnessTribe.vue'
+import InterviewAi from '@/components/InterviewAi.vue'
 export default {
   name: 'InspirePage',
 }

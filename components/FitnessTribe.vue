@@ -24,6 +24,9 @@
           An app to get fit by sharing fitness goals and challenges with your
           friends.
         </p>
+        <Button link="/" color="#3c9196" text-color="white">
+          Go to Project
+        </Button>
       </v-col>
 
       <!-- Right Section: App Screenshots -->
@@ -42,6 +45,7 @@
 </template>
 
 <script>
+import Button from '@/components/Button.vue'
 export default {
   name: 'FitnessHeroSection',
 }
