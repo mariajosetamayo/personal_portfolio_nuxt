@@ -102,8 +102,8 @@ export default {
       menuVisible: false, // Tracks menu visibility on mobile
       items: [
         { title: 'Home', to: '/' },
-        { title: 'Work', to: '/index' },
-        { title: 'Experience', to: '/inspire' },
+        { title: 'Work', to: '/work' },
+        { title: 'Experience', to: '/experience' },
         { title: 'About', to: '/' },
       ],
     }
