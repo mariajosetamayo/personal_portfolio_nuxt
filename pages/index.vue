@@ -10,10 +10,10 @@
             <h2 id="title-typed" class="custom-sub-title"></h2>
           </div>
           <div>
-            <p>
+            <h3 class="hero-text">
               I use the power of tech to craft harmonious experiences for
               everyone.
-            </p>
+            </h3>
           </div>
         </div>
       </div>
@@ -51,6 +51,7 @@ export default {
   font-size: 70px; /* Adjust as needed */
   font-weight: bold; /* Optional */
   font-family: Bitter;
+  margin-bottom: -15px;
 }
 
 .custom-sub-title {
@@ -58,14 +59,27 @@ export default {
   font-weight: medium; /* Optional */
   font-family: Bitter;
   color: #3a9198;
-  padding-bottom: 20px;
 }
 .typewriter-container {
-  height: 3rem; /* Match the height of the text */
+  height: 7rem; /* Match the height of the text */
   overflow: hidden; /* Prevent content shift */
-  font-size: 1.5rem; /* Consistent font size */
+  font-size: calc(1.5rem + 1vw); /* Consistent font size */
   display: flex; /* Keeps alignment consistent */
   align-items: center; /* Vertically center text */
   font-family: Bitter; /* Optional: Typewriter-style font */
+}
+.hero-text {
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  /* Adjust breakpoint as needed */
+  .custom-title {
+    margin-top: 5rem; /* Add top margin for mobile */
+    font-size: 3rem;
+  }
+  .custom-sub-title {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
 }
 </style>

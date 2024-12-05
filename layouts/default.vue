@@ -16,7 +16,6 @@
             max-width="150"
           ></v-img>
         </v-list-item>
-        <v-divider></v-divider>
         <div class="menu-list-padding">
           <v-list-item
             v-for="(item, i) in items"
