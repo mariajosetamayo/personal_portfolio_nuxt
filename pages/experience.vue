@@ -2,7 +2,7 @@
   <v-container fluid class="experience-section py-10">
     <v-row justify="center">
       <v-col cols="12" md="8" class="text-center">
-        <h1 class="font-weight-bold mb-6 title">My Hybrid Skills</h1>
+        <h1 class="text-h4 font-weight-bold text-center">My Hybrid Skills</h1>
         <p class="subtitle-1">
           Over the years, I have cultivated a unique blend of technical
           expertise and interpersonal skills to create innovative solutions and
@@ -106,7 +106,6 @@ export default {
 <style scoped>
 .title {
   font-family: Bitter;
-  font-size: 50px !important;
 }
 .experience-section {
   background-color: #f7f9fc;
@@ -132,6 +131,7 @@ export default {
 @media (max-width: 960px) {
   .experience-section {
     padding: 2rem 1rem;
+    margin-top: 50px;
   }
 }
 </style>

@@ -73,7 +73,7 @@ export default {
     text-align: center;
     padding: 1rem;
     margin-top: 5rem;
-    height: 65vh; /* Full height for hero section */
+    height: 75vh; /* Full height for hero section */
   }
 
   .content h1,

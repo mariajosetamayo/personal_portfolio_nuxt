@@ -74,6 +74,7 @@ export default {
     text-align: center;
     padding: 1rem;
     margin-top: 7rem;
+    height: 80vh;
   }
 
   .content h1,
@@ -84,6 +85,7 @@ export default {
 
   .logo {
     margin-left: -20px;
+    height: 70px;
   }
 }
 </style>

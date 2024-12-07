@@ -24,7 +24,12 @@
           An app to get fit by sharing fitness goals and challenges with your
           friends.
         </p>
-        <Button link="/" color="#3c9196" text-color="white">
+        <Button
+          link="/fitnesstribe"
+          color="#3c9196"
+          text-color="white"
+          v-if="showButton"
+        >
           Go to Project
         </Button>
       </v-col>
@@ -48,6 +53,12 @@
 import Button from '@/components/Button.vue'
 export default {
   name: 'FitnessHeroSection',
+  props: {
+    showButton: {
+      type: Boolean,
+      default: true, // By default, the button is hidden
+    },
+  },
 }
 </script>
 
