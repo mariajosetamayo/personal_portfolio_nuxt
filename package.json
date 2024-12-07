@@ -11,8 +11,9 @@
   },
   "dependencies": {
     "core-js": "^3.25.3",
+    "d3": "^7.9.0",
     "mermaid": "^11.4.1",
-    "nuxt": "^2.15.8",
+    "nuxt": "^2.18.1",
     "typed.js": "^2.1.0",
     "vue": "^2.7.10",
     "vue-server-renderer": "^2.7.10",

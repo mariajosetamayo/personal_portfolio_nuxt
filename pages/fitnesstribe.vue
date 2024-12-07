@@ -266,15 +266,72 @@
         </v-card>
       </v-col>
     </v-row>
+    <v-row align="start" justify="start" class="color-section">
+      <!-- Project Overview Section -->
+      <v-col cols="12" md="10">
+        <h1 class="section-title">Define</h1>
+        <br />
+        <p>
+          The conducted research was used to ideate a solution for the new
+          feature.
+        </p>
 
-    <!-- UI Showcase -->
-    <v-row class="py-10">
-      <v-col cols="12">
-        <h2>UI Designs</h2>
+        <h2 class="sub-title">Key Characteristics</h2>
+        <ul>
+          <li>
+            New functionality allows people to join fitness challenges so that
+            they can have a common goal with friends, family members, and
+            members of the community.
+          </li>
+          <li>
+            New functionality allows users to engage through the social media
+            functionality of a feed and private messaging so that people can
+            communicate their achievements, progress, and any other information
+            to friends, family, and members of the community.
+          </li>
+          <li>
+            The app suggests users challenges that they can join based on their
+            objectives after answering a short questionnaire.
+          </li>
+        </ul>
+        <br />
+        <h2 class="sub-title">User Flows</h2>
+        <br />
+        <h3>The Process of Joining a Challenge</h3>
       </v-col>
-      <v-col cols="12" md="4" v-for="(image, index) in uiDesigns" :key="index">
-        <v-img :src="image" alt="UI Design" contain></v-img>
+      <ExpandableImage
+        :imageSrc="require('@/assets/flow_chart_ft.png')"
+      ></ExpandableImage>
+      <br />
+      <h3>The Process of Adding Friends</h3>
+      <br />
+      <ExpandableImage
+        :imageSrc="require('@/assets/flow_chart_2_ft.png')"
+      ></ExpandableImage>
+      <br />
+      <h3>The Process of Sending a Message</h3>
+      <br />
+      <ExpandableImage
+        :imageSrc="require('@/assets/flow_chart_ft_3.png')"
+      ></ExpandableImage>
+    </v-row>
+    <v-row align="start" justify="start">
+      <!-- Project Overview Section -->
+      <v-col cols="12" md="10">
+        <h1 class="section-title">Design</h1>
+        <br />
+        <h2 class="sub-title">Low Fidelity Wireframes</h2>
+        <br />
+        <p>
+          After defining the user flows and the key features that needed to be
+          included in the app, I created low fidelity wireframes. I Used these
+          for an initial round of moderated user testing with 5 users. All user
+          testing sessions were conducted by Zoom.
+        </p>
       </v-col>
+      <ExpandableImage
+        :imageSrc="require('@/assets/wireframes_ft.png')"
+      ></ExpandableImage>
     </v-row>
 
     <!-- Future Improvements -->
@@ -291,6 +348,7 @@
 
 <script>
 import FitnessTribe from '@/components/FitnessTribe.vue'
+import ExpandableImage from '@/components/ExpandableImage.vue'
 
 export default {
   data() {
@@ -344,6 +402,10 @@ p {
 
 .dark-card-app {
   background-color: #0b1624;
+}
+
+.color-section {
+  background-color: #f9fcfb;
 }
 @media (max-width: 768px) {
   .dark-card {
