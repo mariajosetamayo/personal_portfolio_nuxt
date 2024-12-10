@@ -48,7 +48,7 @@
       </v-col>
       <v-col cols="12" md="6">
         <v-img
-          :src="require('@/assets/fitnesstribe_persona.png')"
+          :src="require('@/assets/fitness_tribe/fitnesstribe_persona.png')"
           alt="Research"
           contain
           max-height="600"
@@ -82,9 +82,8 @@
       </v-col>
     </v-row>
 
-    <!-- Design Process Section -->
+    <!-- Research Section -->
     <v-row align="start" justify="start">
-      <!-- Project Overview Section -->
       <v-col cols="12" md="10">
         <h2 class="sub-title">Secondary Research</h2>
         <p>
@@ -139,7 +138,7 @@
       </v-col>
       <v-col cols="12" md="6">
         <v-img
-          :src="require('@/assets/mapmyrun_screenshot.png')"
+          :src="require('@/assets/fitness_tribe/mapmyrun_screenshot.png')"
           alt="Research"
           contain
           max-height="550"
@@ -205,7 +204,7 @@
       </v-col>
       <v-col cols="12" md="6">
         <v-img
-          :src="require('@/assets/strava_screenshot.png')"
+          :src="require('@/assets/fitness_tribe/strava_screenshot.png')"
           alt="Research"
           contain
           max-height="600"
@@ -300,23 +299,23 @@
         <h3>The Process of Joining a Challenge</h3>
       </v-col>
       <ExpandableImage
-        :imageSrc="require('@/assets/flow_chart_ft.png')"
+        :imageSrc="require('@/assets/fitness_tribe/flow_chart_ft.png')"
       ></ExpandableImage>
       <br />
       <h3>The Process of Adding Friends</h3>
       <br />
       <ExpandableImage
-        :imageSrc="require('@/assets/flow_chart_2_ft.png')"
+        :imageSrc="require('@/assets/fitness_tribe/flow_chart_2_ft.png')"
       ></ExpandableImage>
       <br />
       <h3>The Process of Sending a Message</h3>
       <br />
       <ExpandableImage
-        :imageSrc="require('@/assets/flow_chart_ft_3.png')"
+        :imageSrc="require('@/assets/fitness_tribe/flow_chart_ft_3.png')"
       ></ExpandableImage>
     </v-row>
     <v-row align="start" justify="start">
-      <!-- Project Overview Section -->
+      <!-- Design Section -->
       <v-col cols="12" md="10">
         <h1 class="section-title">Design</h1>
         <br />
@@ -330,7 +329,7 @@
         </p>
       </v-col>
       <ExpandableImage
-        :imageSrc="require('@/assets/wireframes_ft.png')"
+        :imageSrc="require('@/assets/fitness_tribe/wireframes_ft.png')"
       ></ExpandableImage>
       <v-col cols="12" md="10">
         <h2 class="sub-title">Key Testing Insights</h2>
@@ -362,7 +361,7 @@
         </ul>
       </v-col>
     </v-row>
-    <!-- Brand Platform -->
+    <!-- Brand Platform Section-->
     <v-row class="py-10">
       <v-col cols="12">
         <h1>Brand Platform</h1>
@@ -377,7 +376,7 @@
       </v-col>
       <v-col cols="12" md="6">
         <v-img
-          :src="require('@/assets/logo_ft_measures.png')"
+          :src="require('@/assets/fitness_tribe/logo_ft_measures.png')"
           alt="Logo Fitness Tribe"
           contain
           max-height="300"
@@ -385,7 +384,7 @@
       </v-col>
       <v-col cols="12" md="6">
         <v-img
-          :src="require('@/assets/logo_ft_measures_2.png')"
+          :src="require('@/assets/fitness_tribe/logo_ft_measures_2.png')"
           alt="Logo Fitness Tribe"
           contain
           max-height="300"
@@ -401,7 +400,7 @@
         </p>
       </v-col>
       <ExpandableImage
-        :imageSrc="require('@/assets/color_palette_ft.png')"
+        :imageSrc="require('@/assets/fitness_tribe/color_palette_ft.png')"
       ></ExpandableImage>
     </v-row>
     <!-- High Fidelity Designs -->
@@ -419,16 +418,46 @@
       <div>
         <ImageGrid
           :images="[
-            { src: require('@/assets/get-started-page.png'), alt: 'Screen 1' },
-            { src: require('@/assets/questionnaire-1.png'), alt: 'Screen 2' },
-            { src: require('@/assets/suggestions.png'), alt: 'Screen 3' },
-            { src: require('@/assets/suggestions-yoga.png'), alt: 'Screen 4' },
-            { src: require('@/assets/profile.png'), alt: 'Screen 4' },
-            { src: require('@/assets/participants.png'), alt: 'Screen 4' },
-            { src: require('@/assets/feed.png'), alt: 'Screen 4' },
-            { src: require('@/assets/friend-profile.png'), alt: 'Screen 4' },
-            { src: require('@/assets/chat.png'), alt: 'Screen 4' },
-            { src: require('@/assets/congratulations.png'), alt: 'Screen 4' },
+            {
+              src: require('@/assets/fitness_tribe/get-started-page.png'),
+              alt: 'Screen 1',
+            },
+            {
+              src: require('@/assets/fitness_tribe/questionnaire-1.png'),
+              alt: 'Screen 2',
+            },
+            {
+              src: require('@/assets/fitness_tribe/suggestions.png'),
+              alt: 'Screen 3',
+            },
+            {
+              src: require('@/assets/fitness_tribe/suggestions-yoga.png'),
+              alt: 'Screen 4',
+            },
+            {
+              src: require('@/assets/fitness_tribe/profile.png'),
+              alt: 'Screen 4',
+            },
+            {
+              src: require('@/assets/fitness_tribe/participants.png'),
+              alt: 'Screen 4',
+            },
+            {
+              src: require('@/assets/fitness_tribe/feed.png'),
+              alt: 'Screen 4',
+            },
+            {
+              src: require('@/assets/fitness_tribe/friend-profile.png'),
+              alt: 'Screen 4',
+            },
+            {
+              src: require('@/assets/fitness_tribe/chat.png'),
+              alt: 'Screen 4',
+            },
+            {
+              src: require('@/assets/fitness_tribe/congratulations.png'),
+              alt: 'Screen 4',
+            },
           ]"
         />
       </div>
@@ -485,13 +514,13 @@
         <br />
         <div class="justify-center">
           <ExpandableImage
-            :imageSrc="require('@/assets/change_design_ft_1.png')"
+            :imageSrc="require('@/assets/fitness_tribe/change_design_ft_1.png')"
           ></ExpandableImage>
           <ExpandableImage
-            :imageSrc="require('@/assets/change_design_ft_2.png')"
+            :imageSrc="require('@/assets/fitness_tribe/change_design_ft_2.png')"
           ></ExpandableImage>
           <ExpandableImage
-            :imageSrc="require('@/assets/change_design_ft_3.png')"
+            :imageSrc="require('@/assets/fitness_tribe/change_design_ft_3.png')"
           ></ExpandableImage>
         </div>
       </v-col>

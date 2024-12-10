@@ -2,7 +2,7 @@
   <v-container fluid class="hero-section">
     <!-- Top-right Decorative Image -->
     <v-img
-      :src="require('@/assets/shape_ft_2.png')"
+      :src="require('@/assets/fitness_tribe/shape_ft_2.png')"
       alt="Top Right Decoration"
       class="corner-image top-right"
     ></v-img>
@@ -11,7 +11,7 @@
       <v-col cols="12" md="6" class="text-section">
         <div class="logo">
           <v-img
-            :src="require('@/assets/fitness_tribe_logo.png')"
+            :src="require('@/assets/fitness_tribe/fitness_tribe_logo.png')"
             alt="Fitness Tribe Logo"
             max-width="120"
           ></v-img>
@@ -38,7 +38,7 @@
       <v-col cols="12" md="6" class="image-section">
         <div class="app-screens">
           <v-img
-            :src="require('@/assets/fitnessTribePhone.png')"
+            :src="require('@/assets/fitness_tribe/fitnessTribePhone.png')"
             alt="Fitness App Screenshot 1"
             max-width="600"
             class="screenshot screenshot-main"
