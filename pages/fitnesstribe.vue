@@ -267,7 +267,7 @@
       </v-col>
     </v-row>
     <v-row align="start" justify="start" class="color-section">
-      <!-- Project Overview Section -->
+      <!-- Define Section -->
       <v-col cols="12" md="10">
         <h1 class="section-title">Define</h1>
         <br />
@@ -332,15 +332,200 @@
       <ExpandableImage
         :imageSrc="require('@/assets/wireframes_ft.png')"
       ></ExpandableImage>
+      <v-col cols="12" md="10">
+        <h2 class="sub-title">Key Testing Insights</h2>
+        <br />
+        <ul>
+          <li>
+            Users got confused with the navigation to send messages. Users kept
+            going to the message icon located at the footer to send all types of
+            messages.
+          </li>
+          <li>
+            Users found it confusing having the chat next to the private
+            messages to the group on the quest’s page.
+          </li>
+          <li>
+            Users had difficulty differentiating between the icons to add a
+            quest and to add a friend. Even though they are familiar with the
+            icons, the unfamiliarity with the app made them get both of these
+            icons confused.
+          </li>
+          <li>
+            Users found the term quest confusing. Some suggested using the term
+            “challenges” instead.
+          </li>
+          <li>
+            Users mentioned that they would not be likely to join a challenge
+            that was not created by a professional.
+          </li>
+        </ul>
+      </v-col>
     </v-row>
-
-    <!-- Future Improvements -->
+    <!-- Brand Platform -->
     <v-row class="py-10">
       <v-col cols="12">
-        <h2>Future Improvements</h2>
+        <h1>Brand Platform</h1>
+        <br />
+        <h2 class="sub-title">Logo</h2>
+        <br />
         <p>
-          Final thoughts, future steps for the app, and closing remarks.
+          The logo is a combination of the initials of FitnessTribe (F and T).
+          It is made out of circles to convey the concept of unity since the
+          app’s main goal is to connect friends and family through fitness.
         </p>
+      </v-col>
+      <v-col cols="12" md="6">
+        <v-img
+          :src="require('@/assets/logo_ft_measures.png')"
+          alt="Logo Fitness Tribe"
+          contain
+          max-height="300"
+        ></v-img>
+      </v-col>
+      <v-col cols="12" md="6">
+        <v-img
+          :src="require('@/assets/logo_ft_measures_2.png')"
+          alt="Logo Fitness Tribe"
+          contain
+          max-height="300"
+        ></v-img>
+      </v-col>
+      <v-col cols="12">
+        <h2 class="sub-title">Color Palette</h2>
+        <br />
+        <p>
+          The color palette incorporates a mix of green, grey, and black with
+          orange accents. The combination of these colors is meant to convey
+          inclusiveness, growth, and energy.
+        </p>
+      </v-col>
+      <ExpandableImage
+        :imageSrc="require('@/assets/color_palette_ft.png')"
+      ></ExpandableImage>
+    </v-row>
+    <!-- High Fidelity Designs -->
+    <v-row class="py-10">
+      <v-col cols="12">
+        <h1>High Fidelity Designs</h1>
+        <br />
+        <p>
+          Using the wireframes and the findings of the initial round of user
+          testing, I created high fidelity designs. I also incorporated the
+          color palette, the logo and chose to use Poppins as the main font for
+          my designs.
+        </p>
+      </v-col>
+      <div>
+        <ImageGrid
+          :images="[
+            { src: require('@/assets/get-started-page.png'), alt: 'Screen 1' },
+            { src: require('@/assets/questionnaire-1.png'), alt: 'Screen 2' },
+            { src: require('@/assets/suggestions.png'), alt: 'Screen 3' },
+            { src: require('@/assets/suggestions-yoga.png'), alt: 'Screen 4' },
+            { src: require('@/assets/profile.png'), alt: 'Screen 4' },
+            { src: require('@/assets/participants.png'), alt: 'Screen 4' },
+            { src: require('@/assets/feed.png'), alt: 'Screen 4' },
+            { src: require('@/assets/friend-profile.png'), alt: 'Screen 4' },
+            { src: require('@/assets/chat.png'), alt: 'Screen 4' },
+            { src: require('@/assets/congratulations.png'), alt: 'Screen 4' },
+          ]"
+        />
+      </div>
+    </v-row>
+    <!-- Testing -->
+    <v-row class="py-10">
+      <v-col cols="12">
+        <h1>Tests</h1>
+        <br />
+        <p>
+          I conducted a moderated usability test with 5 subjects. I showed each
+          subject the prototype while I gave them a series of tasks to complete.
+        </p>
+        <p>
+          I recruited participants in Boulder, Colorado and Mexico City. All of
+          us were 20-37 years old and had moderate to high physical activity
+          levels. We were mostly middle-income sport enthusiasts who spent an
+          average of 30-50 USD monthly on phone and web applications. We had all
+          used a fitness app on our mobile phones.
+        </p>
+        <h2 class="sub-title">Key Testing Insights</h2>
+        <br />
+        <ul>
+          <li>
+            No back arrow to go to the previous page. The only current
+            navigation is located in the footer and causes frustration in users.
+          </li>
+          <li>
+            Users would like to have more direct access to see their friends and
+            see what challenges they are currently completing.
+          </li>
+          <li>
+            A majority of the users mentioned that they would like to search for
+            people who are using the app and not only their contacts.
+          </li>
+          <li>
+            Several users mentioned that they would like to have an option to
+            give kudos instead of liking a post. They mentioned the kudos icon
+            in Strava as a reference.
+          </li>
+          <li>
+            Users mentioned that they would like to have gamification features.
+            Some suggested that it would be good to use medals or a point system
+            for the challenges.
+          </li>
+        </ul>
+        <br />
+        <h2 class="sub-title">Changes to the Design</h2>
+        <br />
+        <p>
+          After testing, I iterated on the designs and incorporated the main
+          findings. I also updated the main prototype.
+        </p>
+        <br />
+        <div class="justify-center">
+          <ExpandableImage
+            :imageSrc="require('@/assets/change_design_ft_1.png')"
+          ></ExpandableImage>
+          <ExpandableImage
+            :imageSrc="require('@/assets/change_design_ft_2.png')"
+          ></ExpandableImage>
+          <ExpandableImage
+            :imageSrc="require('@/assets/change_design_ft_3.png')"
+          ></ExpandableImage>
+        </div>
+      </v-col>
+    </v-row>
+    <v-row align="start" justify="start" class="color-section end">
+      <!-- Improvements Section -->
+      <v-col cols="12" md="10">
+        <h1 class="section-title">Future Improvements</h1>
+        <br />
+        <p>
+          Due to time restrictions, certain improvements remain pending for
+          future versions of the design.
+        </p>
+
+        <h2 class="sub-title">Key Improvements</h2>
+        <ul>
+          <li>
+            User’s feedback is needed for the newly added features to add
+            friends.
+          </li>
+          <li>
+            The gamification features need to be further developed and tested.
+            More research on successful gamification on existing fitness apps
+            could be helpful. Furthermore, interviews with users would be
+            valuable to further design the point system and badges.
+          </li>
+          <li>
+            Adding challenges needs to be further researched. This is because
+            users mentioned during testing sessions that they would not trust
+            and necessarily be motivated by a challenge that was not added by a
+            professional. After research is conducted, a feature to add
+            challenges needs to be designed.
+          </li>
+        </ul>
       </v-col>
     </v-row>
   </v-container>
@@ -349,18 +534,9 @@
 <script>
 import FitnessTribe from '@/components/FitnessTribe.vue'
 import ExpandableImage from '@/components/ExpandableImage.vue'
+import ImageGrid from '@/components/ImageGrid.vue'
 
-export default {
-  data() {
-    return {
-      uiDesigns: [
-        // require('@/assets/ui1.png'),
-        // require('@/assets/ui2.png'),
-        // require('@/assets/ui3.png'),
-      ],
-    }
-  },
-}
+export default {}
 </script>
 
 <style scoped>
@@ -406,6 +582,10 @@ p {
 
 .color-section {
   background-color: #f9fcfb;
+}
+
+.end {
+  margin-bottom: 50px;
 }
 @media (max-width: 768px) {
   .dark-card {
