@@ -1,0 +1,166 @@
+<v-row class="py-10" justify="center">
+  <!-- Text Column -->
+  <v-col cols="12" md="6" class="d-flex flex-column">
+    <v-card flat>
+      <v-card-title>
+        <h3><b>Theme 1 - Insufficient Information</b></h3>
+      </v-card-title>
+      <v-card-text>
+        <p><b>An observed pattern was that all users:</b></p>
+        <ol>
+          <li>Were not sure about what the product actually does</li>
+          <li>How it could benefit them</li>
+          <li>
+            Found that the information provided on the landing page was
+            misleading
+          </li>
+        </ol>
+        <blockquote>
+          “Oh, I didn’t realize that I had to conduct the interview. I
+          understood that an AI bot would interview the candidate in real-time.”
+        </blockquote>
+        <p><b>Suggestions:</b></p>
+        <ul>
+          <li>The copy on the landing page</li>
+          <li>
+            Adding information about the benefits of signing up and using the
+            product
+          </li>
+          <li>
+            Adding information that can support user navigation and user
+            onboarding
+          </li>
+        </ul>
+      </v-card-text>
+    </v-card>
+  </v-col>
+
+  <!-- Graph Column -->
+  <v-col cols="12" md="6" class="d-flex justify-center align-center">
+    <v-card flat>
+      <v-card-title>
+        <h4><b>Graph Showing User Impact vs Development Time</b></h4>
+      </v-card-title>
+      <v-card-text class="d-flex justify-center align-center">
+        <v-img
+          :src="require('@/assets/interview_ai/theme-1-graph.png')"
+          alt="Graph"
+          contain
+          class="graph-image"
+        ></v-img>
+      </v-card-text>
+    </v-card>
+  </v-col>
+</v-row>
+<v-row class="py-10" justify="center" align="center" no-gutters>
+  <!-- Left Column: Text Content -->
+  <v-col cols="12" sm="12" md="6">
+    <v-card class="dark-card">
+      <v-card-title class="white--text">
+        <h3 class="highlight">Theme 2 - UI Design</h3>
+      </v-card-title>
+      <v-card-text class="white--text">
+        <p>
+          <b>
+            An observed pattern was that all users found it difficult to focus
+            on the tasks and crucial details because:
+          </b>
+        </p>
+        <ol>
+          <li>
+            Their attention was drawn to secondary elements such as the delete
+            question button on the interview page.
+          </li>
+          <li>There was too much information to read at one time.</li>
+          <li>Icons are located on unexpected and unintuitive places.</li>
+        </ol>
+        <br />
+        <p class="quote">
+          “I’m finding it hard to read the question because the delete question
+          button keeps catching my attention.”
+        </p>
+        <p><b>Suggestions</b></p>
+        <ul>
+          <li>
+            Changing the visual hierarchy of headers, text, and components.
+          </li>
+          <li>Changing the page layout where relevant.</li>
+          <li>Correcting spacing.</li>
+          <li>
+            Adhere to using icons and UI patterns that users are familiar with.
+          </li>
+        </ul>
+      </v-card-text>
+    </v-card>
+  </v-col>
+
+  <!-- Right Column: Image -->
+  <v-col cols="12" sm="12" md="6" class="d-flex justify-center">
+    <v-img
+      :src="require('@/assets/interview_ai/theme-2-graph.png')"
+      alt="Research"
+      contain
+      max-height="400"
+      max-width="80%"
+    ></v-img>
+  </v-col>
+</v-row>
+
+<v-row class="py-10">
+  <v-col cols="12" md="6">
+    <v-card class="dark-card">
+      <v-card-title class="white--text">
+        <h3 class="highlight">Theme 4 - Interview Flow</h3>
+      </v-card-title>
+      <v-card-text class="white--text">
+        <p>
+          <b>
+            An observed pattern was that users need to prepare an interview
+            script prior to the interview because:
+          </b>
+        </p>
+        <ol>
+          <li>
+            They need to choose the questions with their team and agree on which
+            ones to ask.
+          </li>
+          <li>
+            They need HR to approve the interview questions in some instances.
+          </li>
+        </ol>
+        <br />
+        <p class="quote">
+          “I’am really surprised that I cannot add my own questions. What if my
+          team has something specific that we would like to ask?”
+        </p>
+        <p>
+          <b>
+            Suggestions
+          </b>
+        </p>
+        <ul>
+          <li>
+            Adding functionality that allows users to add their own questions
+            and customize the interview script
+          </li>
+          <li>
+            Adding functionality to add more candidate information, for example
+            allowing users to upload the candidate’s resume
+          </li>
+          <li>
+            Adding more personalization/customization where relevant and
+            possible
+          </li>
+        </ul>
+      </v-card-text>
+    </v-card>
+  </v-col>
+  <v-col cols="12" md="6">
+    <v-img
+      :src="require('@/assets/interview_ai/theme-3-graph.png')"
+      alt="Research"
+      contain
+      max-height="530"
+    ></v-img>
+  </v-col>
+</v-row>

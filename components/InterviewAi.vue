@@ -22,7 +22,12 @@
             An AI-powered app that assists in conducting and creating
             interviews.
           </p>
-          <Button link="/" color="#3c9196" text-color="white">
+          <Button
+            link="/interviewai"
+            color="#3c9196"
+            text-color="white"
+            v-if="showButton"
+          >
             Go to Project
           </Button>
         </div>
@@ -45,6 +50,12 @@
 import Button from '@/components/Button.vue'
 export default {
   name: 'HeroSection',
+  props: {
+    showButton: {
+      type: Boolean,
+      default: true, // By default, the button is hidden
+    },
+  },
 }
 </script>
 

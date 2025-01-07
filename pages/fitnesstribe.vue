@@ -528,6 +528,21 @@
     <v-row align="start" justify="start" class="color-section end">
       <!-- Improvements Section -->
       <v-col cols="12" md="10">
+        <h1 class="section-title">Live Prototype</h1>
+        <br />
+        <p>
+          A copy of a live prototype can be found here:
+        </p>
+        <Button
+          externalLink="https://www.figma.com/proto/2ypMsd1WchM1xPnLZeWcTA/capstone2?page-id=651%3A3018&node-id=651-3019&starting-point-node-id=651%3A3019&t=UPdMAj6brmaomcn3-1"
+          target="_blank"
+          class="mt-2"
+        >
+          Live Prototype
+        </Button>
+        <br />
+        <br />
+
         <h1 class="section-title">Future Improvements</h1>
         <br />
         <p>
@@ -564,6 +579,7 @@
 import FitnessTribe from '@/components/FitnessTribe.vue'
 import ExpandableImage from '@/components/ExpandableImage.vue'
 import ImageGrid from '@/components/ImageGrid.vue'
+import Button from '@/components/Button.vue'
 
 export default {}
 </script>

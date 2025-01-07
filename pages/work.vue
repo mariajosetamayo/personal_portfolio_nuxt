@@ -17,6 +17,6 @@ import InterviewAi from '@/components/InterviewAi.vue'
 import GalleryPal from '@/components/GalleryPal.vue'
 import Diversify from '@/components/Diversify.vue'
 export default {
-  name: 'InspirePage',
+  name: 'Work',
 }
 </script>
