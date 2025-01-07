@@ -813,6 +813,181 @@
         ></v-img>
       </v-col>
     </v-row>
+    <v-row align="start" justify="start">
+      <!-- Testing Section -->
+      <v-col cols="12" md="10">
+        <h1 class="section-title">Testing and Iteration</h1>
+        <br />
+        <p>
+          We conducted 5 moderated usability tests with the high-fidelity
+          prototype to determine if our designs effectively addressed the issues
+          encountered in the existing live product. The participants included
+          users working in human resources, hiring managers, and small business
+          owners. All interviews were conducted and recorded through Zoom.
+        </p>
+        <h2 class="section-title">Data Synthesis and Insights</h2>
+      </v-col>
+      <ExpandableImage
+        :imageSrc="require('@/assets/interview_ai/data_synthesis.png')"
+      ></ExpandableImage>
+      <h3 class="section-title">Findings</h3>
+      <br />
+      <br />
+      <ul>
+        <li>
+          Users anticipated less manual input when completing forms,
+          particularly since it is an AI platform.
+        </li>
+        <li>
+          Users desired increased personalization and transparency regarding
+          AI-generated questions.
+        </li>
+        <li>
+          Users experienced confusion distinguishing between AI-generated
+          questions and their own custom questions in the script editor.
+        </li>
+        <li>
+          The current script editor saves interview scripts assigned
+          specifically to a candidate rather than a role. This presents an issue
+          as it is time-consuming to create non-reusable scripts. This
+          constraint was imposed by the client due to their structured database.
+        </li>
+        <li>
+          All users found the conduct interview page overwhelming due to
+          information overload and multitasking. They did not find the AI
+          follow-up question functionality useful. However, the client insisted
+          on keeping this feature.
+        </li>
+        <li>
+          Users expected the AI to listen and transcribe the interview to allow
+          them to focus more on the candidate's answers. However, the client
+          mentioned that this was not a currently feasible addition.
+        </li>
+        <li>
+          Users desired more transparency regarding the breakdown of scores,
+          especially in edge cases.
+        </li>
+      </ul>
+      <br />
+      <p>
+        Based on the findings and some of the constraints mentioned above, we
+        iterated on the designs. It is important to mention that we also had a
+        tight timeline to deliver these designs. Therefore, we did not designed
+        a mobile version of the product.
+      </p>
+    </v-row>
+    <v-row justify="center" align="center" class="justify-center">
+      <ExpandableImage
+        :imageSrc="require('@/assets/interview_ai/candidate-info.png')"
+      ></ExpandableImage>
+      <ExpandableImage
+        :imageSrc="require('@/assets/interview_ai/candidate-info-1.png')"
+      ></ExpandableImage>
+      <ExpandableImage
+        :imageSrc="require('@/assets/interview_ai/candidate-info-2.png')"
+      ></ExpandableImage>
+      <ExpandableImage
+        :imageSrc="require('@/assets/interview_ai/candidate-info-3.png')"
+      ></ExpandableImage>
+    </v-row>
+    <h3 class="section-title">Prototype</h3>
+    <br />
+    <p>
+      A functional prototype of the design was created in Figma as a deliverable
+      to the client. Due to time limitations, this prototype was not tested.
+    </p>
+    <Button
+      externalLink="https://www.figma.com/proto/gOCyIpkYDgRTBfklXqzF0G/InterviewAI_Share?page-id=266%3A3931&type=design&node-id=270-12030&scaling=min-zoom&starting-point-node-id=270%3A12030&t=UMhTIpgfFaaK2Irr-1"
+      target="_blank"
+      class="mt-2"
+    >
+      Live Prototype
+    </Button>
+    <br />
+    <br />
+    <h3 class="section-title">Recommendations for Future Improvements</h3>
+    <br />
+    <h4 class="section-title">General Recommendations</h4>
+    <br />
+    <ol>
+      <li>
+        Select a specific target audience to optimize visual design and
+        effectiveness. Focus on segments like inexperienced interviewers, domain
+        non-experts, or startups vs. enterprise for a tailored solution. This
+        will effectively achieve desired outcomes, such as increased sign-up
+        rates.
+      </li>
+      <li>
+        Emphasize and express the mission of InterviewAI (e.g., fair interviews)
+        to appeal to more users and increase sign-up rates. This will refine the
+        designs and achieve desired outcomes effectively.
+      </li>
+      <li>
+        Think about scalability and what needs to happen on both design and
+        development front to be usable in the future when there is a large scale
+        of users
+      </li>
+      <li>
+        Incorporate a business model early on and set up metrics and analytics
+        to have hard data and be aware of biased metrics (and why they are not
+        reliable)
+      </li>
+      <li>
+        During testing, we noticed users found the follow up question feature to
+        be more confusing than useful. We have tried to solve this in our latest
+        design, but it requires testing to validate.
+      </li>
+    </ol>
+    <br />
+    <h4 class="section-title">Short-Term Recommendations</h4>
+    <br />
+    <ol>
+      <li>
+        Users need to save their interview scripts by role/position. This will
+        help users re-use the same script with other candidates (saves time) and
+        helps with standardization (reduce bias in hiring decision).
+      </li>
+      <li>
+        Users need the AI to generate questions and an evaluation rubric based
+        on the resume to get tailored and personalized questions for the
+        interview (helps save time).
+      </li>
+      <li>
+        Users need to having recording and transcription of the interview so
+        they can focus all their attention on the interview and ability to
+        review at a later date.
+      </li>
+      <li>
+        Users need more automation wherever possible to save time entering data
+        manually.
+      </li>
+      <li>
+        Users need the signup to happen at the beginning so the interview flow
+        does not get interrupted (or risk turning away users) and/or signup at
+        the end to allow users to see the full benefits of the product before
+        committing to signup.
+      </li>
+      <li>
+        Users expect the AI to do the tedious manual work to save them time and
+        resources.
+      </li>
+    </ol>
+    <br />
+    <h4 class="section-title">Long-Term Recommendations</h4>
+    <br />
+    <ol>
+      <li>
+        Users need the AI to learn from their most commonly asked questions for
+        a position so that they can get tailored recommendations that will help
+        them improve the quality of their interview questions.
+      </li>
+      <li>
+        Users need Interview AI to integrate with other ATS systems so that they
+        can have a clear track record of the candidates that they interview.
+      </li>
+    </ol>
+    <br />
+    <br />
   </v-container>
 </template>
 
