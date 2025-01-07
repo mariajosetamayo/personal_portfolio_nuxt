@@ -744,6 +744,75 @@
         ></v-img>
       </v-col>
     </v-row>
+    <v-row align="start" justify="start">
+      <!-- Design Section -->
+      <v-col cols="12" md="10">
+        <h1 class="section-title">High Fidelity Designs</h1>
+        <br />
+        <p>
+          We presented our low-fidelity wireframes to the client, showcasing our
+          design ideas and seeking their preferred direction. After agreeing on
+          versions of the designs they liked and the functionality that could be
+          implemented within a relatively short timeframe, we proceeded to
+          create high-fidelity designs. These designs adhered to our visual
+          guidelines to maintain a cohesive style. Subsequently, we developed an
+          initial functional prototype to facilitate design testing.
+        </p>
+      </v-col>
+    </v-row>
+    <v-row justify="center" align="center" class="py-10">
+      <!-- First Row -->
+      <v-col cols="12" sm="6" md="5">
+        <v-img
+          :src="require('@/assets/interview_ai/landing_page_hifi.png')"
+          alt="Sketch 1"
+          class="sketch-image"
+        ></v-img>
+      </v-col>
+      <v-col cols="12" sm="6" md="6">
+        <v-img
+          :src="require('@/assets/interview_ai/position_information.png')"
+          alt="Sketch 2"
+          class="sketch-image"
+        ></v-img>
+      </v-col>
+      <v-col cols="12" sm="6" md="6">
+        <v-img
+          :src="require('@/assets/interview_ai/specific_topics.png')"
+          alt="Sketch 3"
+          class="sketch-image"
+        ></v-img>
+      </v-col>
+      <!-- Second Row -->
+      <v-col cols="12" sm="6" md="6">
+        <v-img
+          :src="require('@/assets/interview_ai/edit_questions.png')"
+          alt="Sketch 4"
+          class="sketch-image"
+        ></v-img>
+      </v-col>
+      <v-col cols="12" sm="6" md="6">
+        <v-img
+          :src="require('@/assets/interview_ai/dashboard_hifi.png')"
+          alt="Sketch 5"
+          class="sketch-image"
+        ></v-img>
+      </v-col>
+      <v-col cols="12" sm="6" md="6">
+        <v-img
+          :src="require('@/assets/interview_ai/past_interviews.png')"
+          alt="Sketch 6"
+          class="sketch-image"
+        ></v-img>
+      </v-col>
+      <v-col cols="12" sm="6" md="6">
+        <v-img
+          :src="require('@/assets/interview_ai/interview_summary.png')"
+          alt="Sketch 6"
+          class="sketch-image"
+        ></v-img>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
