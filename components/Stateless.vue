@@ -15,7 +15,12 @@
             Revolutionary software for networking with scalable, dynamic, and
             simplified micro-network functions.
           </p>
-          <Button link="/" color="#3c9196" text-color="white">
+          <Button
+            link="/stateless"
+            color="#3c9196"
+            text-color="white"
+            v-if="showButton"
+          >
             Go to Project
           </Button>
         </div>
@@ -38,6 +43,12 @@
 import Button from '@/components/Button.vue'
 export default {
   name: 'HeroSection',
+  props: {
+    showButton: {
+      type: Boolean,
+      default: true, // By default, the button is hidden
+    },
+  },
 }
 </script>
 
