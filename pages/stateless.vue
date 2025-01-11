@@ -56,27 +56,27 @@
         <h2 class="sub-title">Technologies Used for the Front End</h2>
         <p>I constructed the Front End of the MVP using the following:</p>
         <br />
-        <v-row justify="space-around">
-          <div>
+        <v-row justify="space-between" align="center" no-gutters>
+          <v-col cols="12" sm="4" md="2" class="text-center">
             <v-icon color="#282828" size="100">mdi-react</v-icon>
             <h2>React JS</h2>
-          </div>
-          <div>
+          </v-col>
+          <v-col cols="12" sm="4" md="2" class="text-center">
             <h1 color="#282828" class="express">EX</h1>
             <h2>Express JS</h2>
-          </div>
-          <div>
+          </v-col>
+          <v-col cols="12" sm="4" md="2" class="text-center">
             <v-icon color="#282828" size="100">mdi-nodejs</v-icon>
             <h2>Node JS</h2>
-          </div>
-          <div>
+          </v-col>
+          <v-col cols="12" sm="4" md="2" class="text-center">
             <v-icon color="#282828" size="100">mdi-language-html5</v-icon>
             <h2>HTML 5</h2>
-          </div>
-          <div>
+          </v-col>
+          <v-col cols="12" sm="4" md="2" class="text-center">
             <v-icon color="#282828" size="100">mdi-language-css3</v-icon>
             <h2>CSS3</h2>
-          </div>
+          </v-col>
         </v-row>
       </v-col>
     </v-row>
@@ -87,346 +87,477 @@
         <h1>Research</h1>
       </v-col>
       <v-col cols="12" md="10">
-        <h2>Methodology</h2>
-        <p>
-          The project lasted 5 weeks with weekly meetings with the client. The
-          team consisted of 3 UX/UI designers. I acted as the client contact and
-          team coordinator.
-        </p>
-        <p>
-          Our research involved a literature review on HR software trends and AI
-          usage in the industry. We also conducted competitor analysis to
-          identify Interview AI's unique features.
-        </p>
-        <p>
-          We conducted 2 rounds of usability testing: one with the live product
-          and another with the initial design prototype.
-        </p>
-        <p>The subsequent sections delve deeper into each research phase.</p>
-      </v-col>
-      <v-col cols="12" md="10">
         <h2 class="sub-title">Secondary Research</h2>
         <p>
-          In our initial research, we explored HR software trends and AI usage
-          in the industry. Key findings include:
+          As a first step, I spent a significant amount of time understanding
+          networks more in depth. After this period of learning, I started doing
+          research about industry trends and what aspects would be appealing to
+          investors in the MVP. These are some insights of my research.
         </p>
-        <ul>
-          <li>
-            There is a growing prevalence of AI-powered recruitment tools and
-            chatbots, streamlining the hiring process and reducing time-to-hire.
-          </li>
-          <li>
-            AI is used for job recommendations, candidate matching, job
-            description suggestions, automated candidate screening, and
-            engagement scoring.
-          </li>
-          <li>
-            AI shows promise in removing bias from job descriptions, using
-            language replacement tools.
-          </li>
-          <li>
-            Robotic process automation (RPA) automates manual, repetitive tasks
-            on a large scale.
-          </li>
-          <li>
-            Skill-based assessments and diversity and inclusion are gaining
-            importance.
-          </li>
-        </ul>
-        <br />
         <p>
-          Conclusions from this research phase:
+          In 2017, the evolution of network function state decoupling products,
+          particularly within Software-Defined Networking (SDN) and Network
+          Function Virtualization (NFV), reflected several significant trends:
         </p>
         <ul>
           <li>
-            Interview AI operates in a competitive industry, requiring clear
-            communication of its advantages over competitors.
+            Focus on Automation and Orchestration: Reports from Gartner
+            highlighted a growing emphasis on automation and orchestration
+            capabilities within SDN and NFV solutions. Vendors aimed to simplify
+            network management through centralized controllers capable of
+            automating provisioning and configuration tasks.
           </li>
           <li>
-            Recommended platform enhancements: candidate scoring, resume-based
-            screening questions.
+            Application-Centric Approaches: Research published in IEEE Network
+            highlighted a shift towards application-centric approaches in
+            network management. SDN and NFV solutions were increasingly tailored
+            to align network policies and configurations with specific
+            application requirements, optimizing performance and user
+            experience.
           </li>
           <li>
-            Prioritize incorporating as many RPAs as possible to the platform.
-          </li>
-          <li>
-            Emphasize Interview AI's mission to ensure fair interviews.
+            Analytics and Insights: There was a growing integration of analytics
+            and insights capabilities into SDN and NFV platforms. Solutions
+            offered real-time monitoring, predictive analytics, and actionable
+            insights to optimize network performance and resource utilization
+            (Source: Network World).
           </li>
         </ul>
-        <br />
-        <h2 class="sub-title">Competitor Analysis</h2>
-        <br />
-        <ExpandableImage
-          :imageSrc="require('@/assets/interview_ai/competitor_analysis.png')"
-        ></ExpandableImage>
       </v-col>
       <!-- Define Section -->
       <v-col cols="12" md="10">
-        <h2 class="section-title">Primary Research</h2>
+        <h2 class="section-title">Competitor Analysis</h2>
         <br />
+        <v-col cols="12" md="12">
+          <h2 class="sub-title">Cisco Meraki</h2>
+          <p>
+            Cisco Meraki provides cloud-managed IT solutions for networking,
+            security, and device management, simplifying administration and
+            enhancing scalability for organizations through a centralized
+            web-based dashboard.
+          </p>
+        </v-col>
+        <v-row align="center" justify="space-around">
+          <!-- Image Column -->
+          <v-col cols="12" md="6">
+            <v-img
+              :src="require('@/assets/stateless/cisco_meraki.png')"
+              alt="Research"
+              contain
+              max-height="600"
+            ></v-img>
+          </v-col>
+
+          <!-- Card Column -->
+          <v-col cols="12" md="6">
+            <v-card class="dark-card-app">
+              <v-card-title class="white--text">
+                <h3 class="highlight">Likes</h3>
+              </v-card-title>
+              <v-card-text class="white--text">
+                <ul>
+                  <li>Visuals of analytics and system status.</li>
+                  <li>
+                    Provides options to filter the data displayed.
+                  </li>
+                  <li>The sidebar navigation is clear and easily accesible.</li>
+                </ul>
+              </v-card-text>
+              <v-card-title class="white--text">
+                <h3 class="highlight">Dislikes</h3>
+              </v-card-title>
+              <v-card-text class="white--text">
+                <ul>
+                  <li>
+                    There is some information overload by showing too much data
+                    at once. For instance, The table is displays too many rows.
+                  </li>
+                  <li>
+                    White space is limited and has poor visual hierarchy, which
+                    makes the dashboard hard to read.
+                  </li>
+                  <li>
+                    The information architecture is confusing, especially in
+                    places inside the dashboard that take the user to other
+                    pages.
+                  </li>
+                </ul>
+              </v-card-text>
+            </v-card>
+          </v-col>
+        </v-row>
+        <br />
+        <v-col cols="12" md="12">
+          <h2 class="sub-title">Juniper Contrail</h2>
+          <p>
+            Juniper Contrail is an SDN solution focused on cloud-scale
+            networking, providing virtualization and automation capabilities.
+          </p>
+        </v-col>
+        <v-row align="center" justify="space-around">
+          <!-- Image Column -->
+          <v-col cols="12" md="6">
+            <v-img
+              :src="require('@/assets/stateless/juniper.png')"
+              alt="Research"
+              contain
+              max-height="600"
+            ></v-img>
+          </v-col>
+
+          <!-- Card Column -->
+          <v-col cols="12" md="6">
+            <v-card class="dark-card-app">
+              <v-card-title class="white--text">
+                <h3 class="highlight">Likes</h3>
+              </v-card-title>
+              <v-card-text class="white--text">
+                <ul>
+                  <li>
+                    Has attractive and easy to read visuals of analytics and
+                    system status.
+                  </li>
+                  <li>
+                    UI has good use of visual hierarchy.
+                  </li>
+                  <li>The sidebar navigation is clear and easily accesible.</li>
+                </ul>
+              </v-card-text>
+              <v-card-title class="white--text">
+                <h3 class="highlight">Dislikes</h3>
+              </v-card-title>
+              <v-card-text class="white--text">
+                <ul>
+                  <li>
+                    The colors used in the graphs and in some titles are too
+                    light and make it hard to read the data.
+                  </li>
+                  <li>
+                    There are a lot of cards with little information that could
+                    be condensed into a table or another component to reduce
+                    cognitive overload.
+                  </li>
+                  <li>
+                    The ability to customize the UI to fit specific workflows or
+                    preferences can be limited. pages.
+                  </li>
+                </ul>
+              </v-card-text>
+            </v-card>
+          </v-col>
+        </v-row>
+        <br />
+        <v-col cols="12" md="12">
+          <h2 class="sub-title">Palo Alto Networks</h2>
+          <p>
+            Palo Alto Networks is a global cybersecurity company that provides a
+            wide range of products and services aimed at protecting
+            organizations from cyber threats.
+          </p>
+        </v-col>
+        <v-row align="center" justify="space-around">
+          <!-- Image Column -->
+          <v-col cols="12" md="6">
+            <v-img
+              :src="require('@/assets/stateless/palo_alto_networks.png')"
+              alt="Research"
+              contain
+              max-height="600"
+            ></v-img>
+          </v-col>
+
+          <!-- Card Column -->
+          <v-col cols="12" md="6">
+            <v-card class="dark-card-app">
+              <v-card-title class="white--text">
+                <h3 class="highlight">Likes</h3>
+              </v-card-title>
+              <v-card-text class="white--text">
+                <ul>
+                  <li>
+                    Provides useful information about the network.
+                  </li>
+                  <li>
+                    Uses tabs for easy access to some sections.
+                  </li>
+                  <li>Has filters and quick actions.</li>
+                </ul>
+              </v-card-text>
+              <v-card-title class="white--text">
+                <h3 class="highlight">Dislikes</h3>
+              </v-card-title>
+              <v-card-text class="white--text">
+                <ul>
+                  <li>
+                    The UI looks outdated, resembling the style of software from
+                    the 1990’s.
+                  </li>
+                  <li>
+                    The navigation is somewhat confusing since there is a system
+                    of tabs and a sidebar with many options that are not
+                    organized in the most intuitive way.
+                  </li>
+                  <li>
+                    The information architecture is confusing, especially
+                    different styles of navigation (tabs and a sidebar) and
+                    having two tabs menus.
+                  </li>
+                </ul>
+              </v-card-text>
+            </v-card>
+          </v-col>
+        </v-row>
+        <br />
+        <br />
+        <h2>Primary Research</h2>
         <p>
-          As the initial step, we performed moderated usability testing on the
-          live product, involving 5 remote interviews conducted via Zoom.
-          Recordings and transcriptions were made for all interviews. We
-          identified patterns through an affinity map, and we created a user
-          journey map to enhance our understanding of user experience.
-          Additionally, we created a prioritization matrix to determine task
-          priorities, considering development time and user requirements. As a
-          Front-End Engineer, I played a key role in determining development
-          time and task prioritization.
+          My primary research involved interviews with five potential users,
+          including network engineers and investors. Some interviews were
+          conducted online via Google Meet, while others were in-person with an
+          intern assisting in note-taking. The collected data was analyzed to
+          identify patterns and categorized into various insights:
         </p>
+        <ul>
+          <li>
+            Users prefer using a terminal for network configuration and
+            management.
+          </li>
+          <li>
+            Some users favor using a keyboard over a mouse for interface
+            interaction.
+          </li>
+          <li>
+            Users found graphical network status displays useful.
+          </li>
+          <li>
+            Overall, opinions on current network configuration UIs were
+            negative. Users reported wasting time learning poorly designed UIs.
+          </li>
+        </ul>
         <br />
-        <h2 class="section-title">User Journey Map</h2>
+        <p>Specific user frustrations included:</p>
+        <ul>
+          <li>
+            Lack of control for certain tasks, with engineers preferring code
+            over confusing flows.
+          </li>
+          <li>
+            Vague or confusing language avoiding technical terms.
+          </li>
+          <li>
+            Lack of trust due to insufficient system feedback, such as error
+            handling and success notifications.
+          </li>
+          <li>
+            Inconsistencies in the UI, such as displaying different sets of
+            information on different pages.
+          </li>
+        </ul>
         <br />
-        <ExpandableImage
-          :imageSrc="require('@/assets/interview_ai/user_journey_map.png')"
-        ></ExpandableImage>
-      </v-col>
-    </v-row>
-    <h2 class="sub-title">Identified Themes and Prioritization</h2>
+        <br />
+        <!-- Persona 1 -->
+        <v-row>
+          <!-- Left Column (Image and Description) -->
+          <v-col cols="12" md="4" class="text-center persona-column">
+            <!-- Circular Image -->
+            <v-avatar size="200">
+              <v-img
+                alt="Network Engineer"
+                :src="require('@/assets/stateless/network_engineer_avatar.png')"
+              />
+            </v-avatar>
+            <br />
+            <br />
 
-    <v-row class="py-10" justify="center" align="stretch">
-      <!-- Text Column -->
-      <v-col cols="12" md="6" class="d-flex flex-column">
-        <v-card flat>
-          <v-card-title>
-            <h4><b>Theme 1 - Insufficient Information</b></h4>
-          </v-card-title>
-          <v-card-text>
-            <p><b>An observed pattern was that all users:</b></p>
-            <ol>
-              <li>Were not sure about what the product actually does</li>
-              <li>How it could benefit them</li>
-              <li>
-                Found that the information provided on the landing page was
-                misleading
-              </li>
-            </ol>
-            <br />
-            <blockquote>
-              “Oh, I didn’t realize that I had to conduct the interview. I
-              understood that an AI bot would interview the candidate in
-              real-time.”
-            </blockquote>
-            <br />
-            <p><b>Suggestions:</b></p>
-            <ul>
-              <li>The copy on the landing page</li>
-              <li>
-                Adding information about the benefits of signing up and using
-                the product
-              </li>
-              <li>
-                Adding information that can support user navigation and user
-                onboarding
-              </li>
-            </ul>
-          </v-card-text>
-        </v-card>
-      </v-col>
+            <!-- User Details -->
+            <div class="mt-4">
+              <h3 class="text-left">
+                <strong>Age:</strong>
+                30 years old
+              </h3>
+              <h3 class="text-left">
+                <strong>Location:</strong>
+                Denver, Colorado
+              </h3>
+              <br />
+              <blockquote class="mt-3 text-left">
+                “As a network engineer, I find that many network configuration
+                UIs are often cluttered and counterintuitive. Poor design can
+                lead to inefficiency and increased risk of errors, making it
+                difficult to quickly identify and resolve issues. I prefer using
+                the terminal.”
+              </blockquote>
+            </div>
+          </v-col>
 
-      <!-- Graph Column -->
-      <v-col cols="12" md="6" class="d-flex justify-center align-center">
-        <v-card flat>
-          <v-card-text class="d-flex justify-center align-center">
-            <v-img
-              :src="require('@/assets/interview_ai/theme-1-graph.png')"
-              alt="Graph"
-              contain
-              class="graph-image"
-            ></v-img>
-          </v-card-text>
-        </v-card>
-      </v-col>
-    </v-row>
-    <v-row class="py-10" justify="center" align="stretch">
-      <!-- Text Column -->
-      <v-col cols="12" md="6" class="d-flex flex-column">
-        <v-card flat>
-          <v-card-title>
-            <h4><b>Theme 2 - UI Design</b></h4>
-          </v-card-title>
-          <v-card-text>
-            <p>
-              <b>
-                An observed pattern was that all users found it difficult to
-                focus on the tasks and crucial details because:
-              </b>
-            </p>
-            <ol>
-              <li>
-                Their attention was drawn to secondary elements such as the
-                delete question button on the interview page.
-              </li>
-              <li>There was too much information to read at one time.</li>
-              <li>
-                Icons are located on unexpected and unintuitive places.
-              </li>
-            </ol>
-            <br />
-            <blockquote>
-              “I’m finding it hard to read the question because the delete
-              question button keeps catching my attention.”
-            </blockquote>
-            <br />
-            <p><b>Suggestions:</b></p>
-            <ul>
-              <li>
-                Changing the visual hierarchy of headers, text, and components.
-              </li>
-              <li>
-                Changing the page layout where relevant.
-              </li>
-              <li>
-                Correcting spacing.
-              </li>
-              <li>
-                Adhere to using icons and UI patterns that users are familiar
-                with.
-              </li>
-            </ul>
-          </v-card-text>
-        </v-card>
-      </v-col>
+          <!-- Right Column (Title and Sections) -->
+          <v-col cols="12" md="8">
+            <!-- Title -->
+            <h4>NETWORK ENGINEER WORKING IN A DATA CENTER</h4>
+            <h2 class="mb-4 font-weight-bold">
+              Calvin: The Detail-Oriented Network Engineer
+            </h2>
 
-      <!-- Graph Column -->
-      <v-col cols="12" md="6" class="d-flex justify-center align-center">
-        <v-card flat>
-          <v-card-text class="d-flex justify-center align-center">
-            <v-img
-              :src="require('@/assets/interview_ai/theme-2-graph.png')"
-              alt="Graph"
-              contain
-              class="graph-image"
-            ></v-img>
-          </v-card-text>
-        </v-card>
-      </v-col>
-    </v-row>
-    <v-row class="py-10" justify="center" align="stretch">
-      <!-- Text Column -->
-      <v-col cols="12" md="6" class="d-flex flex-column">
-        <v-card flat>
-          <v-card-title>
-            <h4><b>Theme 3 - Lack of User Control</b></h4>
-          </v-card-title>
-          <v-card-text>
-            <p>
-              <b>
-                An observed pattern was that all users got frustrated because
-                they could not:
-              </b>
-            </p>
-            <ol>
-              <li>
-                Customize the interview question script
-              </li>
-              <li>
-                Add their own questions that are relevant to their company’s
-                specific needs.
-              </li>
-              <li>
-                Add more candidate information.
-              </li>
-            </ol>
+            <!-- Sections -->
+            <v-row>
+              <!-- Behavior Section -->
+              <v-col cols="12" class="mb-4">
+                <h3 class="font-weight-bold">Behavior</h3>
+                <div class="text-body-1">
+                  <!-- Placeholder text; replace with actual content -->
+                  Calvin works at a data center in Denver and is responsible for
+                  making sure that the network infrastructure runs smoothly and
+                  efficiently. He is very passionate about the latest trends in
+                  technology and is very detailed oriented. He loves working
+                  with dark themes in his user interfaces and is not bothered at
+                  all by the terminal. He has great technical communication and
+                  is very knowledgeable about his job.
+                </div>
+              </v-col>
+              <!-- Frustrations Section -->
+              <v-col cols="12" class="mb-4">
+                <h3 class="font-weight-bold">Frustrations</h3>
+                <ul>
+                  <li>
+                    Impact on Performance: State inconsistencies can impact
+                    network performance by causing delays, packet loss, or
+                    inefficient routing. Calvin needs to constantly monitor and
+                    optimize network states to ensure optimal performance and
+                    minimize latency.
+                  </li>
+                  <li>
+                    Operational Overhead: Managing and maintaining consistent
+                    network states require significant operational overhead.
+                    Calvin must implement rigorous change management processes,
+                    conduct regular audits, and invest in automation tools to
+                    streamline state management tasks.
+                  </li>
+                  <li>
+                    Security Risks: Inconsistent state management can pose
+                    security risks by leaving vulnerabilities open.
+                    Misconfigurations or outdated state information may create
+                    loopholes that attackers could exploit to gain unauthorized
+                    access or disrupt network operations.
+                  </li>
+                </ul>
+              </v-col>
+              <!-- User Needs Section -->
+              <v-col cols="12">
+                <h3 class="font-weight-bold">User Needs</h3>
+                <ul>
+                  <li>
+                    Increase the performance of the network infrastructure so
+                    that he can provide a better service to his clients.
+                  </li>
+                  <li>
+                    Automation tools that can help him streamline state
+                    management tasks so that he can reduce operational overhead.
+                  </li>
+                  <li>
+                    A service that assists with the security of network
+                    functions so that he can focus on other important aspects of
+                    the network infrastructure.
+                  </li>
+                </ul>
+              </v-col>
+            </v-row>
+          </v-col>
+        </v-row>
+        <!-- Persona 2 -->
+        <br />
+        <br />
+        <br />
+        <v-row>
+          <!-- Left Column (Image and Description) -->
+          <v-col cols="12" md="4" class="text-center persona-column">
+            <!-- Circular Image -->
+            <v-avatar size="200">
+              <v-img
+                alt="Network Engineer"
+                :src="require('@/assets/stateless/investor_avatar.png')"
+              />
+            </v-avatar>
             <br />
-            <blockquote>
-              “I’am really surprised that I cannot add my own questions. What if
-              my team has something specific that we would like to ask?”
-            </blockquote>
             <br />
-            <p><b>Suggestions:</b></p>
-            <ul>
-              <li>
-                Adding functionality that allows users to add their own
-                questions and customize the interview script.
-              </li>
-              <li>
-                Adding functionality to add more candidate information, for
-                example allowing users to upload the candidate’s resume.
-              </li>
-              <li>
-                Adding more personalization/customization where relevant and
-                possible.
-              </li>
-            </ul>
-          </v-card-text>
-        </v-card>
-      </v-col>
 
-      <!-- Graph Column -->
-      <v-col cols="12" md="6" class="d-flex justify-center align-center">
-        <v-card flat>
-          <v-card-text class="d-flex justify-center align-center">
-            <v-img
-              :src="require('@/assets/interview_ai/theme-3-graph.png')"
-              alt="Graph"
-              contain
-              class="graph-image"
-            ></v-img>
-          </v-card-text>
-        </v-card>
-      </v-col>
-    </v-row>
+            <!-- User Details -->
+            <div class="mt-4">
+              <h3 class="text-left">
+                <strong>Age:</strong>
+                50 years old
+              </h3>
+              <h3 class="text-left">
+                <strong>Location:</strong>
+                San Jose, California
+              </h3>
+              <br />
+              <blockquote class="mt-3 text-left">
+                “Today's network management software isn't just about
+                efficiency; it's about transforming how we connect and
+                communicate. I'm looking to invest in solutions that redefine
+                scalability, security, and user experience in this rapidly
+                evolving landscape.”
+              </blockquote>
+            </div>
+          </v-col>
 
-    <v-row class="py-10" justify="center" align="stretch">
-      <!-- Text Column -->
-      <v-col cols="12" md="6" class="d-flex flex-column">
-        <v-card flat>
-          <v-card-title>
-            <h4><b>Theme 4 - Interview Flow</b></h4>
-          </v-card-title>
-          <v-card-text>
-            <p>
-              <b>
-                An observed pattern was that users need to prepare an interview
-                script prior to the interview because:
-              </b>
-            </p>
-            <ol>
-              <li>
-                They need to choose the questions with their team and agree on
-                which ones to ask.
-              </li>
-              <li>
-                They need HR to approve the interview questions in some
-                instances.
-              </li>
-            </ol>
-            <br />
-            <blockquote>
-              “I wouldn’t use this product unless I could choose the interview
-              questions ahead. The AI would be very handy to prepare my
-              interview though.”
-            </blockquote>
-            <br />
-            <p><b>Suggestions:</b></p>
-            <ul>
-              <li>
-                Adding a feature that allows users to prepare their interview
-                script prior to the interview.
-              </li>
-              <li>
-                Using the current AI functionality to allow users to generate
-                questions for their interview script prior to the interview.
-              </li>
-            </ul>
-          </v-card-text>
-        </v-card>
-      </v-col>
+          <!-- Right Column (Title and Sections) -->
+          <v-col cols="12" md="8">
+            <!-- Title -->
+            <h4>TECH VENTURE INVESTOR</h4>
+            <h2 class="mb-4 font-weight-bold">
+              Eddie: The Innovator Investor with Tech-Savvy Flair
+            </h2>
 
-      <!-- Graph Column -->
-      <v-col cols="12" md="6" class="d-flex justify-center align-center">
-        <v-card flat>
-          <v-card-text class="d-flex justify-center align-center">
-            <v-img
-              :src="require('@/assets/interview_ai/theme-4-graph.png')"
-              alt="Graph"
-              contain
-              class="graph-image"
-            ></v-img>
-          </v-card-text>
-        </v-card>
+            <!-- Sections -->
+            <v-row>
+              <!-- Behavior Section -->
+              <v-col cols="12" class="mb-4">
+                <h3 class="font-weight-bold">Behavior</h3>
+                <div class="text-body-1">
+                  Eddie, has a portfolio of diverse investments in a few Silicon
+                  Valley startups. He brings sharp market insight, rigorous due
+                  diligence, and strategic guidance to startups. He prioritizes
+                  scalability, security, and market adoption, adapting swiftly
+                  to tech trends while nurturing long-term growth opportunities.
+                </div>
+              </v-col>
+              <!-- Frustrations Section -->
+              <v-col cols="12" class="mb-4">
+                <h3 class="font-weight-bold">Frustrations</h3>
+                <p>
+                  Eddie is frustrated by lack of innovation, poor market fit,
+                  slow adoption, scalability issues, resistance to change, and
+                  regulatory hurdles in startups he considers investing in.
+                  These factors hinder growth and market impact, driving him to
+                  seek tech ventures that can navigate these challenges
+                  effectively.
+                </p>
+              </v-col>
+              <!-- User Needs Section -->
+              <v-col cols="12">
+                <h3 class="font-weight-bold">User Needs</h3>
+                <ul>
+                  <li>
+                    Eddie seeks startups that offer innovative technologies
+                    capable of disrupting traditional network management
+                    practices.
+                  </li>
+                  <li>
+                    He values startups that clearly understand and address
+                    market needs, ensuring their solutions provide tangible
+                    benefits to customers.
+                  </li>
+                  <li>
+                    Eddie seeks investments with strong potential for return on
+                    investment (ROI), focusing on technologies poised for
+                    sustainable growth and profitability.
+                  </li>
+                </ul>
+              </v-col>
+            </v-row>
+          </v-col>
+        </v-row>
       </v-col>
     </v-row>
 
@@ -1162,6 +1293,12 @@ blockquote {
   font-size: 66px;
   font-weight: 100;
 }
+
+.persona-column {
+  background-color: #ebedf2;
+  padding-top: 30px;
+}
+
 @media (max-width: 768px) {
   .dark-card {
     /* background-color: #0b1624; */
