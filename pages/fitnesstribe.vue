@@ -573,6 +573,7 @@
         </ul>
       </v-col>
     </v-row>
+    <br />
     <v-col cols="12" md="10">
       <Button link="/interviewai" color="#3c9196" text-color="white">
         Go Back
