@@ -44,14 +44,9 @@
           I'd love to hear from you! Feel free to reach out for project
           collaborations, opportunities, or even just to say hello.
         </p>
-        <v-btn
-          color="primary"
-          href="mailto:youremail@example.com"
-          class="py-3 px-6"
-          elevation="2"
-        >
-          Get in Touch
-        </v-btn>
+        <h4>Email: mariajose.tamayo@gmail.com</h4>
+        <h4>LinkedIn: www.linkedin.com/in/mariajtamayo</h4>
+        <h4>Instagram: @mjtmayo</h4>
       </v-col>
     </v-row>
   </v-container>

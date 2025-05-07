@@ -900,6 +900,7 @@
       externalLink="https://www.figma.com/proto/gOCyIpkYDgRTBfklXqzF0G/InterviewAI_Share?page-id=266%3A3931&type=design&node-id=270-12030&scaling=min-zoom&starting-point-node-id=270%3A12030&t=UMhTIpgfFaaK2Irr-1"
       target="_blank"
       class="mt-2"
+      rel="noopener noreferrer"
     >
       Live Prototype
     </Button>
@@ -986,6 +987,15 @@
         can have a clear track record of the candidates that they interview.
       </li>
     </ol>
+    <br />
+    <div class="nav-buttons">
+      <Button link="/stateless" color="#3c9196" text-color="white">
+        Go Back
+      </Button>
+      <Button link="/fitnesstribe" color="#3c9196" text-color="white">
+        Go to next Project
+      </Button>
+    </div>
     <br />
     <br />
   </v-container>
@@ -1079,6 +1089,13 @@ blockquote {
   background-color: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
 @media (max-width: 768px) {
   .dark-card {
     /* background-color: #0b1624; */

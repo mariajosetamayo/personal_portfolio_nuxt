@@ -780,6 +780,21 @@
         "
       ></ExpandableImage>
     </v-row>
+    <h3 class="section-title">Prototype</h3>
+    <br />
+    <p>
+      A functional prototype of the design was created in Figma.
+    </p>
+    <Button
+      externalLink="https://www.figma.com/proto/M3SnM1ec87vCBcoUUROEL8/stateless-mvp-recreation?page-id=95%3A394&node-id=115-1174&viewport=1711%2C1292%2C0.25&t=OcgWNFJKVNhd9RD1-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=115%3A1174"
+      class="mt-2"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Live Prototype
+    </Button>
+    <br />
+    <br />
     <v-row align="start" justify="start">
       <!-- Project Overview Section -->
       <v-col cols="12" md="10">
@@ -828,6 +843,9 @@
           UX design and development.
         </p>
         <br />
+        <Button link="/interviewai" color="#3c9196" text-color="white">
+          Go to next Project
+        </Button>
       </v-col>
     </v-row>
   </v-container>
@@ -836,7 +854,6 @@
 <script>
 import Stateless from '@/components/Stateless.vue'
 import ExpandableImage from '@/components/ExpandableImage.vue'
-import ImageGrid from '@/components/ImageGrid.vue'
 import Button from '@/components/Button.vue'
 
 export default {

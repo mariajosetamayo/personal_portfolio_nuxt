@@ -537,6 +537,7 @@
           externalLink="https://www.figma.com/proto/2ypMsd1WchM1xPnLZeWcTA/capstone2?page-id=651%3A3018&node-id=651-3019&starting-point-node-id=651%3A3019&t=UPdMAj6brmaomcn3-1"
           target="_blank"
           class="mt-2"
+          rel="noopener noreferrer"
         >
           Live Prototype
         </Button>
@@ -572,6 +573,11 @@
         </ul>
       </v-col>
     </v-row>
+    <v-col cols="12" md="10">
+      <Button link="/interviewai" color="#3c9196" text-color="white">
+        Go Back
+      </Button>
+    </v-col>
   </v-container>
 </template>
 

@@ -8,9 +8,14 @@
           expertise and interpersonal skills to create innovative solutions and
           drive success.
         </p>
-        <Button link="/" color="#3c9196" text-color="white">
-          Resume
-        </Button>
+          <v-btn
+            @click="downloadPDF"
+            class="btn-download"
+            color="#3c9196"
+          >
+            Resume
+          </v-btn>
+        </div>
       </v-col>
     </v-row>
     <v-row justify="center" class="mt-6">
@@ -100,6 +105,14 @@
 import Button from '@/components/Button.vue'
 export default {
   name: 'ExperienceSection',
+  methods: {
+    downloadPDF() {
+      const link = document.createElement('a')
+      link.href = '/files/cv_mj_english.pdf'
+      link.download = 'cv_mj_english.pdf'
+      link.click()
+    },
+  },
 }
 </script>
 
@@ -126,6 +139,11 @@ export default {
 
 .skill-card p {
   color: #444;
+}
+
+.btn-download {
+  color: #fff;
+  font-weight: bold;
 }
 
 @media (max-width: 960px) {
