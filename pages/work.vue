@@ -4,8 +4,6 @@
       <Stateless></Stateless>
       <InterviewAi></InterviewAi>
       <FitnessTribe></FitnessTribe>
-      <GalleryPal></GalleryPal>
-      <Diversify></Diversify>
     </v-col>
   </v-row>
 </template>

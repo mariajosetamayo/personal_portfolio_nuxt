@@ -560,92 +560,24 @@
         </v-row>
       </v-col>
     </v-row>
-
-    <v-row class="py-10" justify="center" align="stretch">
-      <!-- Text Column -->
-      <v-col cols="12" md="6" class="d-flex flex-column">
-        <v-card flat>
-          <v-card-title>
-            <h4><b>Theme 5 - Functionality</b></h4>
-          </v-card-title>
-          <v-card-text>
-            <p>
-              <b>
-                An observed pattern was that users would like to see more
-                features that are included in most competitor products such as:
-              </b>
-            </p>
-            <ol>
-              <li>
-                Recording and transcription of the interview.
-              </li>
-              <li>
-                Ability to export the interview.
-              </li>
-              <li>
-                ATS integration.
-              </li>
-            </ol>
-            <br />
-            <blockquote>
-              “Why should I use InterviewAI for my notes if I can just record
-              the meeting and use ChatGPT to transcribe it?”
-            </blockquote>
-            <br />
-            <p><b>Suggestions:</b></p>
-            <ul>
-              <li>
-                Adding a feature that allows users to record the interview.
-              </li>
-              <li>
-                Adding a feature that transcribes the interview for the user.
-              </li>
-              <li>
-                Adding functionality to export and/or share the interview file.
-              </li>
-              <li>
-                Adding ATS integration.
-              </li>
-            </ul>
-          </v-card-text>
-        </v-card>
-      </v-col>
-
-      <!-- Graph Column -->
-      <v-col cols="12" md="6" class="d-flex justify-center align-center">
-        <v-card flat>
-          <v-card-text class="d-flex justify-center align-center">
-            <v-img
-              :src="require('@/assets/interview_ai/theme-3-graph.png')"
-              alt="Graph"
-              contain
-              class="graph-image"
-            ></v-img>
-          </v-card-text>
-        </v-card>
-      </v-col>
-    </v-row>
     <v-row align="start" justify="start" class="color-background">
       <!-- Define Section -->
       <v-col cols="12" md="10">
         <h1 class="section-title">Define</h1>
         <br />
         <p>
-          The data obtained from the usability testing was used to determine the
-          user flow for the product. The user flow had to be adapted to certain
-          technical constraints due to limited funding and a single developer
-          working on this product. Therefore, certain aspects of the user flow
-          were compromised, such as not giving the ability to users to save
-          interview scripts by position and saving candidate’s data. However,
-          improvements were made by enhancing product information and providing
-          user guidance. The objective was to minimize user confusion and
-          frustration.
+          After conducting primary and secondary research, I focused my
+          attention on understanding the technical aspects of the backend and
+          familiarizing with the API. This was an important step because the
+          system had several constraints and needed the user to follow a
+          particular flow because of peculiarities of the network functions
+          orchestrator. After a few days, I created the following user flow.
         </p>
 
         <h2 class="sub-title">User Flow</h2>
         <br />
         <ExpandableImage
-          :imageSrc="require('@/assets/interview_ai/user-flow.png')"
+          :imageSrc="require('@/assets/stateless/user_flow.png')"
         ></ExpandableImage>
       </v-col>
     </v-row>
@@ -655,493 +587,249 @@
         <h1 class="section-title">Design</h1>
         <br />
         <p>
-          After identifying the user needs and agreeing with a user flow, we
-          started creating the designs. Our designs needed to cover the
-          following:
+          After identifying the user needs and agreeing with a user flow, I
+          started creating the designs. I decided that my designs needed to
+          cover the following:
         </p>
-        <ol>
+        <ul>
           <li>
-            Re-designing the landing page with more information about the
-            product
+            A way to start and stop network traffic.
           </li>
           <li>
-            Adding a Dashboard
+            Functionality to add servers and network functions.
           </li>
           <li>
-            Adding progressive disclosure in the user flow and more guidance for
-            the user
+            Functionality to increase and decrease network traffic.
           </li>
           <li>
-            Adding an interview script editor page
+            Show the servers and the network functions on the UI
           </li>
           <li>
-            Re-designing the page for conducting an interview
+            A graph to show the changes in network traffic and how these
+            affected the latency
           </li>
           <li>
-            Re-designing the interview summary page
+            Logs to show what happens in the system
           </li>
-          <li>
-            Adding a page to consult past interviews and saved scripts
-          </li>
-        </ol>
+        </ul>
         <br />
 
         <h2 class="sub-title">Sketches</h2>
         <br />
         <p>
-          By creating sketches, we were able to identify the following aspects:
+          I created a series of sketches to put together the elements mentioned
+          above and test my ideas. Due to the short time frame to design and
+          develop the MVP, I carried out gorilla testing with my co-workers at
+          the office. I was aware that this would lead to some bias, but I
+          considered that it was important to get some quick feedback at this
+          stage.
+        </p>
+      </v-col>
+    </v-row>
+    <v-row justify="center" align="center" class="py-10">
+      <!-- First Row -->
+      <v-col cols="12" sm="6" md="8">
+        <v-img
+          :src="require('@/assets/stateless/Stateless1.1.png')"
+          alt="Sketch 1"
+          class="sketch-image"
+        ></v-img>
+      </v-col>
+      <v-col cols="12" sm="6" md="8">
+        <v-img
+          :src="require('@/assets/stateless/Stateless1.2.png')"
+          alt="Sketch 2"
+          class="sketch-image"
+        ></v-img>
+      </v-col>
+      <v-col cols="12" sm="6" md="8">
+        <v-img
+          :src="require('@/assets/stateless/Stateless1.3.png')"
+          alt="Sketch 3"
+          class="sketch-image"
+        ></v-img>
+      </v-col>
+      <!-- Second Row -->
+      <v-col cols="12" sm="6" md="8">
+        <v-img
+          :src="require('@/assets/stateless/Stateless1.4.png')"
+          alt="Sketch 4"
+          class="sketch-image"
+        ></v-img>
+      </v-col>
+      <v-col cols="12" sm="6" md="8">
+        <v-img
+          :src="require('@/assets/stateless/Stateless1.5.png')"
+          alt="Sketch 5"
+          class="sketch-image"
+        ></v-img>
+      </v-col>
+      <v-col cols="12" sm="6" md="8">
+        <v-img
+          :src="require('@/assets/stateless/Stateless2.1.png')"
+          alt="Sketch 6"
+          class="sketch-image"
+        ></v-img>
+      </v-col>
+      <v-col cols="12" sm="6" md="8">
+        <v-img
+          :src="require('@/assets/stateless/Stateless3.1.png')"
+          alt="Sketch 6"
+          class="sketch-image"
+        ></v-img>
+      </v-col>
+    </v-row>
+    <v-row align="start" justify="start">
+      <!-- Design Section -->
+      <v-col cols="12" md="10">
+        <h1 class="section-title">High Fidelity Prototypes</h1>
+        <br />
+        <p>
+          Due to time constraints, I prioritized the creation of high-fidelity
+          mockups over initial wireframes to ensure we had visually compelling
+          materials for key events—such as Connect X—where Stateless was being
+          showcased to investors and potential clients.
+        </p>
+        <p>
+          The wireframes were subsequently developed based on user feedback
+          gathered during the testing of these high-fidelity sketches. Key
+          insights included:
         </p>
         <ol>
           <li>
-            We determined the sections that needed to be included on the landing
-            page
+            Simplifying interaction design by removing dual columns and the
+            add/subtract buttons, which users found cumbersome and unintuitive.
           </li>
           <li>
-            We decided to use a stepper to include progressive disclosure of
-            information in order to avoid cognitive overload and guide the user
+            Increasing the size of the network topology layout to improve
+            readability and user comprehension.
           </li>
           <li>
-            The dashboard would include lists of recently created interview
-            scripts and recently conducted interviews
+            Clarifying button labels and instructions to make actions more
+            explicit and reduce user confusion.
           </li>
         </ol>
       </v-col>
     </v-row>
     <v-row justify="center" align="center" class="py-10">
       <!-- First Row -->
-      <v-col cols="12" sm="6" md="4">
+      <v-col cols="12" sm="6" md="8">
         <v-img
-          :src="require('@/assets/interview_ai/sketch-1.png')"
-          alt="Sketch 1"
-          class="sketch-image"
+          :src="require('@/assets/stateless/stateless_mvp_intro.png')"
+          alt="wireframe 1"
+          class="wireframe-image"
         ></v-img>
       </v-col>
-      <v-col cols="12" sm="6" md="4">
+      <v-col cols="12" sm="6" md="8">
         <v-img
-          :src="require('@/assets/interview_ai/sketch-2.png')"
-          alt="Sketch 2"
-          class="sketch-image"
+          :src="require('@/assets/stateless/stateless_second_step.png')"
+          alt="wireframe 2"
+          class="wireframeimage"
         ></v-img>
       </v-col>
-      <v-col cols="12" sm="6" md="4">
+      <v-col cols="12" sm="6" md="8">
         <v-img
-          :src="require('@/assets/interview_ai/sketch-3.png')"
-          alt="Sketch 3"
-          class="sketch-image"
-        ></v-img>
-      </v-col>
-      <!-- Second Row -->
-      <v-col cols="12" sm="6" md="4">
-        <v-img
-          :src="require('@/assets/interview_ai/sketch-4.png')"
-          alt="Sketch 4"
-          class="sketch-image"
-        ></v-img>
-      </v-col>
-      <v-col cols="12" sm="6" md="4">
-        <v-img
-          :src="require('@/assets/interview_ai/sketch-5.png')"
-          alt="Sketch 5"
-          class="sketch-image"
-        ></v-img>
-      </v-col>
-      <v-col cols="12" sm="6" md="4">
-        <v-img
-          :src="require('@/assets/interview_ai/sketch-6.png')"
-          alt="Sketch 6"
-          class="sketch-image"
-        ></v-img>
-      </v-col>
-    </v-row>
-    <v-row align="start" justify="start">
-      <!-- Design Section -->
-      <v-col cols="12" md="10">
-        <h1 class="section-title">Wireframes</h1>
-        <br />
-        <p>
-          During the wire-framing process, we explored the following aspects:
-        </p>
-        <ol>
-          <li>
-            The information to be included on the landing page
-          </li>
-          <li>
-            The general layout of the dashboard and the navigation drawer, with
-            the decision to make the navigation drawer collapsible
-          </li>
-          <li>
-            The layout and steps to be included in the stepper
-          </li>
-          <li>
-            The layout and functionality required for the interview conducting
-            page
-          </li>
-          <li>
-            The layout and information to be included in the interview summary
-            page
-          </li>
-        </ol>
-      </v-col>
-    </v-row>
-    <v-row justify="center" align="center" class="py-10">
-      <!-- First Row -->
-      <v-col cols="12" sm="6" md="4">
-        <v-img
-          :src="require('@/assets/interview_ai/landing_page.png')"
-          alt="Sketch 1"
-          class="sketch-image"
-        ></v-img>
-      </v-col>
-      <v-col cols="12" sm="6" md="4">
-        <v-img
-          :src="require('@/assets/interview_ai/dashboard.png')"
-          alt="Sketch 2"
-          class="sketch-image"
-        ></v-img>
-      </v-col>
-      <v-col cols="12" sm="6" md="4">
-        <v-img
-          :src="require('@/assets/interview_ai/create_interview_page.png')"
-          alt="Sketch 3"
-          class="sketch-image"
+          :src="require('@/assets/stateless/stateless_third_step.png')"
+          alt="wireframe 3"
+          class="wireframe-image"
         ></v-img>
       </v-col>
       <!-- Second Row -->
-      <v-col cols="12" sm="6" md="4">
+      <v-col cols="12" sm="6" md="8">
         <v-img
-          :src="require('@/assets/interview_ai/create_interview_script.png')"
-          alt="Sketch 4"
+          :src="require('@/assets/stateless/stateless_mvp.png')"
+          alt="wireframe 4"
           class="sketch-image"
-        ></v-img>
-      </v-col>
-      <v-col cols="12" sm="6" md="4">
-        <v-img
-          :src="require('@/assets/interview_ai/create_interview_script_2.png')"
-          alt="Sketch 5"
-          class="sketch-image"
-        ></v-img>
-      </v-col>
-      <v-col cols="12" sm="6" md="4">
-        <v-img
-          :src="require('@/assets/interview_ai/create_interview_script_3.png')"
-          alt="Sketch 6"
-          class="sketch-image"
-        ></v-img>
-      </v-col>
-      <v-col cols="12" sm="6" md="4">
-        <v-img
-          :src="require('@/assets/interview_ai/interviewing_1.png')"
-          alt="Sketch 6"
-          class="sketch-image"
-        ></v-img>
-      </v-col>
-      <v-col cols="12" sm="6" md="4">
-        <v-img
-          :src="require('@/assets/interview_ai/interviewing_2.png')"
-          alt="Sketch 6"
-          class="sketch-image"
-        ></v-img>
-      </v-col>
-      <v-col cols="12" sm="6" md="4">
-        <v-img
-          :src="require('@/assets/interview_ai/evaluation.png')"
-          alt="Sketch 6"
-          class="sketch-image"
+          width="800"
         ></v-img>
       </v-col>
     </v-row>
-    <v-row align="start" justify="start">
-      <!-- Design Section -->
-      <v-col cols="12" md="10">
-        <h1 class="section-title">Visual Guidelines</h1>
-        <br />
-        <p>
-          Interview AI did not have clear branding guidelines. However, during
-          the initial meeting, the client expressed their desire to retain their
-          current logo. After subsequent discussions, we identified four key
-          brand attributes that needed to be reflected in the design:
-        </p>
-        <ul>
-          <li>
-            Efficient
-          </li>
-          <li>
-            Trustworthy
-          </li>
-          <li>
-            Helpful
-          </li>
-          <li>
-            Fair
-          </li>
-        </ul>
-        <br />
-        <p>
-          These attributes served as inspiration for our choice of color palette
-          and typography. The color palette primarily consists of monochromatic
-          shades of blue and gray. We specifically selected blue due to its
-          commonly associated traits of trust, intelligence, and efficiency.
-        </p>
-        <v-img
-          :src="require('@/assets/interview_ai/colors.png')"
-          alt="colors"
-        ></v-img>
-        <p>
-          For the typography, we chose two fonts that are rounded to convey the
-          attribute of fairness. The weights and sizes mostly follow Golden
-          Ratio proportions with the exception of typefaces used for the landing
-          page.
-        </p>
-        <v-img
-          :src="require('@/assets/interview_ai/typography.png')"
-          alt="typography"
-        ></v-img>
-      </v-col>
-    </v-row>
-    <v-row align="start" justify="start">
-      <!-- Design Section -->
-      <v-col cols="12" md="10">
-        <h1 class="section-title">High Fidelity Designs</h1>
-        <br />
-        <p>
-          We presented our low-fidelity wireframes to the client, showcasing our
-          design ideas and seeking their preferred direction. After agreeing on
-          versions of the designs they liked and the functionality that could be
-          implemented within a relatively short timeframe, we proceeded to
-          create high-fidelity designs. These designs adhered to our visual
-          guidelines to maintain a cohesive style. Subsequently, we developed an
-          initial functional prototype to facilitate design testing.
-        </p>
-      </v-col>
-    </v-row>
-    <v-row justify="center" align="center" class="py-10">
-      <!-- First Row -->
-      <v-col cols="12" sm="6" md="5">
-        <v-img
-          :src="require('@/assets/interview_ai/landing_page_hifi.png')"
-          alt="Sketch 1"
-          class="sketch-image"
-        ></v-img>
-      </v-col>
-      <v-col cols="12" sm="6" md="6">
-        <v-img
-          :src="require('@/assets/interview_ai/position_information.png')"
-          alt="Sketch 2"
-          class="sketch-image"
-        ></v-img>
-      </v-col>
-      <v-col cols="12" sm="6" md="6">
-        <v-img
-          :src="require('@/assets/interview_ai/specific_topics.png')"
-          alt="Sketch 3"
-          class="sketch-image"
-        ></v-img>
-      </v-col>
-      <!-- Second Row -->
-      <v-col cols="12" sm="6" md="6">
-        <v-img
-          :src="require('@/assets/interview_ai/edit_questions.png')"
-          alt="Sketch 4"
-          class="sketch-image"
-        ></v-img>
-      </v-col>
-      <v-col cols="12" sm="6" md="6">
-        <v-img
-          :src="require('@/assets/interview_ai/dashboard_hifi.png')"
-          alt="Sketch 5"
-          class="sketch-image"
-        ></v-img>
-      </v-col>
-      <v-col cols="12" sm="6" md="6">
-        <v-img
-          :src="require('@/assets/interview_ai/past_interviews.png')"
-          alt="Sketch 6"
-          class="sketch-image"
-        ></v-img>
-      </v-col>
-      <v-col cols="12" sm="6" md="6">
-        <v-img
-          :src="require('@/assets/interview_ai/interview_summary.png')"
-          alt="Sketch 6"
-          class="sketch-image"
-        ></v-img>
-      </v-col>
-    </v-row>
+
     <v-row align="start" justify="start">
       <!-- Testing Section -->
       <v-col cols="12" md="10">
         <h1 class="section-title">Testing and Iteration</h1>
         <br />
         <p>
-          We conducted 5 moderated usability tests with the high-fidelity
-          prototype to determine if our designs effectively addressed the issues
-          encountered in the existing live product. The participants included
-          users working in human resources, hiring managers, and small business
-          owners. All interviews were conducted and recorded through Zoom.
+          I conducted limited user testing primarily due to time constraints and
+          the lack of technology and tools for creating a dynamic, interactive
+          prototype for the MVP. Instead, I carried out informal guerrilla
+          testing with my colleagues using high-definition mock-ups before
+          proceeding to code the app.
         </p>
-        <h2 class="section-title">Data Synthesis and Insights</h2>
+        <p>
+          Once the first versions of the app were ready, I conducted user
+          testing with five colleagues. However, since the app was already
+          coded, making certain changes based on their feedback was challenging.
+          For example, users consistently requested filters on the logs, but
+          implementing this required major code changes. Due to time
+          constraints, I focused on addressing the easier changes identified
+          through user testing.
+        </p>
+        <p>
+          This experience taught me the importance of having adequate time and
+          resources for thorough user testing and the value of creating
+          interactive prototypes before coding to allow for more flexibility in
+          incorporating user feedback.
+        </p>
       </v-col>
+
       <ExpandableImage
-        :imageSrc="require('@/assets/interview_ai/data_synthesis.png')"
-      ></ExpandableImage>
-      <h3 class="section-title">Findings</h3>
-      <br />
-      <br />
-      <ul>
-        <li>
-          Users anticipated less manual input when completing forms,
-          particularly since it is an AI platform.
-        </li>
-        <li>
-          Users desired increased personalization and transparency regarding
-          AI-generated questions.
-        </li>
-        <li>
-          Users experienced confusion distinguishing between AI-generated
-          questions and their own custom questions in the script editor.
-        </li>
-        <li>
-          The current script editor saves interview scripts assigned
-          specifically to a candidate rather than a role. This presents an issue
-          as it is time-consuming to create non-reusable scripts. This
-          constraint was imposed by the client due to their structured database.
-        </li>
-        <li>
-          All users found the conduct interview page overwhelming due to
-          information overload and multitasking. They did not find the AI
-          follow-up question functionality useful. However, the client insisted
-          on keeping this feature.
-        </li>
-        <li>
-          Users expected the AI to listen and transcribe the interview to allow
-          them to focus more on the candidate's answers. However, the client
-          mentioned that this was not a currently feasible addition.
-        </li>
-        <li>
-          Users desired more transparency regarding the breakdown of scores,
-          especially in edge cases.
-        </li>
-      </ul>
-      <br />
-      <p>
-        Based on the findings and some of the constraints mentioned above, we
-        iterated on the designs. It is important to mention that we also had a
-        tight timeline to deliver these designs. Therefore, we did not designed
-        a mobile version of the product.
-      </p>
-    </v-row>
-    <v-row justify="center" align="center" class="justify-center">
-      <ExpandableImage
-        :imageSrc="require('@/assets/interview_ai/candidate-info.png')"
-      ></ExpandableImage>
-      <ExpandableImage
-        :imageSrc="require('@/assets/interview_ai/candidate-info-1.png')"
-      ></ExpandableImage>
-      <ExpandableImage
-        :imageSrc="require('@/assets/interview_ai/candidate-info-2.png')"
-      ></ExpandableImage>
-      <ExpandableImage
-        :imageSrc="require('@/assets/interview_ai/candidate-info-3.png')"
+        :imageSrc="
+          require('@/assets/stateless/stateless_feedback_wireframes.png')
+        "
       ></ExpandableImage>
     </v-row>
-    <h3 class="section-title">Prototype</h3>
-    <br />
-    <p>
-      A functional prototype of the design was created in Figma as a deliverable
-      to the client. Due to time limitations, this prototype was not tested.
-    </p>
-    <Button
-      externalLink="https://www.figma.com/proto/gOCyIpkYDgRTBfklXqzF0G/InterviewAI_Share?page-id=266%3A3931&type=design&node-id=270-12030&scaling=min-zoom&starting-point-node-id=270%3A12030&t=UMhTIpgfFaaK2Irr-1"
-      target="_blank"
-      class="mt-2"
-    >
-      Live Prototype
-    </Button>
-    <br />
-    <br />
-    <h3 class="section-title">Recommendations for Future Improvements</h3>
-    <br />
-    <h4 class="section-title">General Recommendations</h4>
-    <br />
-    <ol>
-      <li>
-        Select a specific target audience to optimize visual design and
-        effectiveness. Focus on segments like inexperienced interviewers, domain
-        non-experts, or startups vs. enterprise for a tailored solution. This
-        will effectively achieve desired outcomes, such as increased sign-up
-        rates.
-      </li>
-      <li>
-        Emphasize and express the mission of InterviewAI (e.g., fair interviews)
-        to appeal to more users and increase sign-up rates. This will refine the
-        designs and achieve desired outcomes effectively.
-      </li>
-      <li>
-        Think about scalability and what needs to happen on both design and
-        development front to be usable in the future when there is a large scale
-        of users
-      </li>
-      <li>
-        Incorporate a business model early on and set up metrics and analytics
-        to have hard data and be aware of biased metrics (and why they are not
-        reliable)
-      </li>
-      <li>
-        During testing, we noticed users found the follow up question feature to
-        be more confusing than useful. We have tried to solve this in our latest
-        design, but it requires testing to validate.
-      </li>
-    </ol>
-    <br />
-    <h4 class="section-title">Short-Term Recommendations</h4>
-    <br />
-    <ol>
-      <li>
-        Users need to save their interview scripts by role/position. This will
-        help users re-use the same script with other candidates (saves time) and
-        helps with standardization (reduce bias in hiring decision).
-      </li>
-      <li>
-        Users need the AI to generate questions and an evaluation rubric based
-        on the resume to get tailored and personalized questions for the
-        interview (helps save time).
-      </li>
-      <li>
-        Users need to having recording and transcription of the interview so
-        they can focus all their attention on the interview and ability to
-        review at a later date.
-      </li>
-      <li>
-        Users need more automation wherever possible to save time entering data
-        manually.
-      </li>
-      <li>
-        Users need the signup to happen at the beginning so the interview flow
-        does not get interrupted (or risk turning away users) and/or signup at
-        the end to allow users to see the full benefits of the product before
-        committing to signup.
-      </li>
-      <li>
-        Users expect the AI to do the tedious manual work to save them time and
-        resources.
-      </li>
-    </ol>
-    <br />
-    <h4 class="section-title">Long-Term Recommendations</h4>
-    <br />
-    <ol>
-      <li>
-        Users need the AI to learn from their most commonly asked questions for
-        a position so that they can get tailored recommendations that will help
-        them improve the quality of their interview questions.
-      </li>
-      <li>
-        Users need Interview AI to integrate with other ATS systems so that they
-        can have a clear track record of the candidates that they interview.
-      </li>
-    </ol>
-    <br />
-    <br />
+    <v-row align="start" justify="start">
+      <!-- Project Overview Section -->
+      <v-col cols="12" md="10">
+        <h1 class="section-title">Takeaways and Improvements</h1>
+        <br />
+        <p>
+          It’s important to note that the MVP of Stateless software was designed
+          and built within a very short time frame and under numerous
+          technological constraints. Despite these challenges and the potential
+          for many improvements, I focused my efforts on the subsequent software
+          development. However, the MVP successfully demonstrated the system’s
+          functionality, securing 1.5 million USD in seed funding and 12.5
+          million USD in Series A funding.
+        </p>
+        <p>
+          This experience highlighted the difficulties of managing time
+          effectively while designing and coding a product, particularly in
+          allocating sufficient time for research. If I could revisit this
+          project, I would approach it differently in several ways:
+        </p>
+        <ul>
+          <li>
+            Organized Research Plan: Establish and adhere to a well-structured
+            research plan from the beginning.
+          </li>
+          <li>
+            Stakeholder Communication: Clearly communicate the importance of
+            conducting research and outline my plan to all stakeholders.
+          </li>
+          <li>
+            Efficient Research Methodologies: Use faster research methodologies,
+            such as Google Venture’s design sprint.
+          </li>
+          <li>
+            Prototyping Over Coding: Invest more time in creating interactive
+            prototypes in Figma before coding. At the time, the technology for
+            interactive prototyping was insufficient, so I went straight to
+            coding and tested the solution post-build. This approach was
+            inefficient, as making design changes in code is significantly
+            harder.
+          </li>
+        </ul>
+        <p>
+          This project was a valuable learning experience, emphasizing the
+          importance of research, prototyping, and effective time management in
+          UX design and development.
+        </p>
+        <br />
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 

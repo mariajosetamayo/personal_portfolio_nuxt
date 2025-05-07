@@ -4,8 +4,8 @@
     <v-img
       :src="imageSrc"
       alt="Expandable Image"
-      class="my-4"
-      max-width="800"
+      class="my-4 image"
+      max-width="900"
       @click="openDialog"
     />
 
